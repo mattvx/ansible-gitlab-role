@@ -1,7 +1,7 @@
 - name: Assert that needed variables are defined
   ansible.builtin.assert:
     that:
-      - external_url is defined
-      - root_password is defined
-      - external_url is not none
-      - root_password is not none
+      - role_deploy_gitlab_external_url is defined
+      - role_deploy_gitlab_root_password is defined
+      - role_deploy_gitlab_external_url is not none
+      - role_deploy_gitlab_root_password is not none
