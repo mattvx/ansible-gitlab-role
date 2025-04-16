@@ -30,7 +30,7 @@
     url: 'https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/config_file.repo?os={{ os_distro }}&dist={{ os_version }}&source=script'
     dest: /etc/yum.repos.d/gitlab_gitlab-ee.repo
 
-- name: Installing gitlab package
+- name: installing gitlab package
   ansible.builtin.dnf:
     name:
       - perl
