@@ -3,6 +3,7 @@
 - name: Role Entrypoint
   hosts: localhost
   connection: local
+  become: true
   any_errors_fatal: true
   roles:
     - role_deploy_gitlab
