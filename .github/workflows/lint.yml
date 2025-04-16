@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     container: mattxvvv/ansiblelint:latest
     steps:
+      - name: Where are we
+        run: ls -la
       - name: Run ansible lint
         run: ansible-lint --force-color -p roles/role-deploy-gitlab
