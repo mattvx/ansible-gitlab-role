@@ -9,7 +9,7 @@
 
 - name: Ensuring required py modules are installed
   ansible.builtin.pip:
-    name: python3-dnf
+    name: dnf
 
 - name: Ensure that firewalld is running
   ansible.builtin.service:
