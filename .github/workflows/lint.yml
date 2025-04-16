@@ -15,4 +15,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Run ansible lint
-        run: ansible-lint --force-color -p roles/role-deploy-gitlab
+        run: ansible-lint --force-color -p roles/role_deploy_gitlab
