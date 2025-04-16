@@ -1,0 +1,16 @@
+name: Ansible Lint
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: mattxvvv/ansiblelint:latest
+    steps:
+      - name: Run ansible lint
+        run: ansible-lint --force-color -p roles/role-deploy-gitlab
