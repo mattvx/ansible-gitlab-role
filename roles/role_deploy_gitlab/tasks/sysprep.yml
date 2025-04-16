@@ -1,15 +1,9 @@
 - name: Ensure facts has been gathered
   ansible.builtin.gather_facts:
 
-- name: Installing pip
-  ansible.builtin.dnf:
-    name:
-      - python3-pip
-    update_cache: true
-
 - name: Ensuring required py modules are installed
   ansible.builtin.pip:
-    name: python3-dnf
+    name: python-dnf
 
 - name: Ensure that firewalld is running
   ansible.builtin.service:
