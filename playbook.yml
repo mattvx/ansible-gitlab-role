@@ -4,4 +4,4 @@
   hosts: all
   any_errors_fatal: true
   roles:
-    - role-deploy-gitlab
+    - role_deploy_gitlab
