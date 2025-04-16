@@ -39,5 +39,5 @@
       - gitlab-ee
     update_cache: true
   environment:
-    EXTERNAL_URL: '{{ gitlab_external_url }}'
-    GITLAB_ROOT_PASSWORD: '{{ gitlab_root_password }}'
+    EXTERNAL_URL: '{{ external_url }}'
+    GITLAB_ROOT_PASSWORD: '{{ root_password }}'

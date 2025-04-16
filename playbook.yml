@@ -1,7 +1,8 @@
 ---
 
 - name: Role Entrypoint
-  hosts: all
+  hosts: localhost
+  connection: local
   any_errors_fatal: true
   roles:
     - role_deploy_gitlab
