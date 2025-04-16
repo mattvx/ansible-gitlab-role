@@ -28,7 +28,7 @@
 - name: Downloading the appropiate gitlab repo file
   ansible.builtin.get_url:
     url: 'https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/config_file.repo?os={{ os_distro }}&dist={{ os_version }}&source=script'
-    mode: "0644" 
+    mode: "0644"
     dest: /etc/yum.repos.d/gitlab_gitlab-ee.repo
 
 - name: Installing gitlab package
