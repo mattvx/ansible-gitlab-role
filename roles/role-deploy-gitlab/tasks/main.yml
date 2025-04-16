@@ -1,0 +1,7 @@
+---
+
+- name: Asserts
+  ansible.builtin.include_tasks: assert.yml
+
+- name: System prep
+  ansible.builtin.include_tasks: sysprep.yml

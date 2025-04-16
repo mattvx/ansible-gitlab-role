@@ -1,0 +1,9 @@
+image: mattxvvv/ansiblelint:latest
+
+stages:
+  - validate
+
+ansible validate:
+  stage: validate
+  script:
+    - ansible-lint --force-color -p roles/role-deploy-gitlab

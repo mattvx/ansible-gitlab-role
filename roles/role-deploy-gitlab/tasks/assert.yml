@@ -1,0 +1,5 @@
+- name: Assert that needed variables are defined
+  ansible.builtin.assert:
+    that:
+      - gitlab_external_url is defined
+      - gitlab_external_url is not none
